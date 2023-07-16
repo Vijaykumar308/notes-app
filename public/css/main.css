@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* UTITLITIS CLASSES START */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn{
+    background-color: #507b33;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: .2rem;
+}
+.btn-danger {
+    background-color: rgb(247, 100, 100);
+}
+.btn-primary {
+    background-color: #217dbf;
+}
+.btn-success{
+    background-color: #507b33;
+}
+.text-center{ 
+    text-align: center;
+}
+.text-white {
+    color: #fff;
+}
+/* UTITLITIS CLASSES ENDS */
+
+:root {
+    --red-400: #FF9B9B;
+    --orange-300: #FFD6A5;
+    --yellow-300: #FFFEC4;
+    --green-300: #CBFFA9;
+    
+    --white: #FFF;
+    --black: #000;
+    --grey-300: #d2d2d2;
+    --text-color: #D0D9DB;
+}
+.mycontainer{
+    max-width: 70%;
+    margin: auto;    
+    background-color: rgb(143, 143, 143);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--grey-300);
+}
+
+.box-center {
+    display: grid;
+    place-items: center;
+}
+.wrapper {
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px 0px grey;
+}
+
+.bg-image{
+    background: url('../images/bg-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: lightpink;
+    background-color: var(--orange-300); */
+}
+
+/* AUTH DESIGN LOGIN AND REGISTRATION */
+
+.form-title{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-group{
+    margin: 16px 0px;
+    font-size: 15px;
+}
+.form-group > label {
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px  black;
+    margin-bottom: .6rem;
+}
+
+.form-group > input {
+    width: 30vw;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: 2px solid var(--grey-300);
+    border-radius: .5rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.form-group > input[type='submit']{
+    cursor: pointer;
+    background-color: #507b33;
+    border: #CBFFA9;
+    color: #fff;    
+    font-size: 2rem;
+    padding: 1.3rem 0;
+}
+.signupLink{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.signupLink > a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* Header blade css */
+.active {
+    border-bottom: 2px solid yellow;
+    padding-bottom: .6rem;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5rem;
+    background-color: #095185;
+    font-size: 1.7rem;
+}
+header .logo a {
+    font-size: 23px;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: 3rem;
+}
+header nav ul{
+    display: flex;
+    gap: 4rem;
+}
+
+header nav ul li a {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.Registrations{
+    display: flex;
+    gap: 2rem;
+}
