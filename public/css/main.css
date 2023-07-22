@@ -38,6 +38,9 @@ li {
 .btn-success, .bg-success{
     background-color: #507b33;
 }
+.btn-orange, .bg-orange {
+    background-color: orange;
+}
 .text-center{ 
     text-align: center;
 }
@@ -54,7 +57,7 @@ li {
     color: #507b33;
 }
 .text-orange {
-    color: orange;
+    color: var(--theam-primary);
 }
 .full-screen {
     width: 100%;
@@ -90,6 +93,8 @@ li {
     --black: #000;
     --grey-300: #d2d2d2;
     --text-color: #D0D9DB;
+
+    --theam-primary: #ff5302bd; 
 }
 .contant-section{
     max-width: 70%;
@@ -154,7 +159,8 @@ li {
 }
 .form-group > input[type='submit']{
     cursor: pointer;
-    background-color: #507b33;
+    /* background-color: #507b33; */
+    background-color: var(--theam-primary);
     border: #CBFFA9;
     color: #fff;    
     font-size: 2rem;
@@ -213,8 +219,8 @@ header nav ul li a {
 .right-side section {
     position: relative;
     top: 40%;
-    left: 20%;
     transform: translateY(-50%);
+    margin-left: 6.6rem;
 }
 
 .right-side section h3 {

@@ -20,7 +20,7 @@
                             <input type="password" id="password" name="password" autocomplete="off" required>
                         </div>
                         
-                        <div class="form-group">
+                        <div class="form-group" class="btn-orange">
                             <input type="submit" value="Login">
                         </div>
                     </form>
@@ -31,7 +31,7 @@
 
             <div class="right-side">
                 <section>
-                    <h3>Note<span class="text-orange ">Pro</span></h3>
+                    <h3>Note<span class="text-orange">Pro</span></h3>
                     <p class="slung">share you're thoughts in texts</p>
                 </section>
                 </div>
