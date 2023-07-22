@@ -2,5 +2,7 @@
 @section('title','home')
 
 @section('main')
-    this is home page
+    <div class="bg-primary">
+        <p>this is a home page</p>
+    </div>
 @endsection

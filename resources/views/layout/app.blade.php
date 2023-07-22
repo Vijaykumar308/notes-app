@@ -9,8 +9,8 @@
 </head>
 <body>
     @include('layout.header')
-    <div class="mycontainer">  
-        <div>
+    <div class="container">  
+        <div class="contant-section">
             @yield('main')
         </div>
         @include('layout.footer')

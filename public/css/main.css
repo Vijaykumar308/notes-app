@@ -29,13 +29,13 @@ li {
     color: #fff;
     border-radius: .2rem;
 }
-.btn-danger {
+.btn-danger,.bg-danger {
     background-color: rgb(247, 100, 100);
 }
-.btn-primary {
+.btn-primary, .bg-primary {
     background-color: #217dbf;
 }
-.btn-success{
+.btn-success, .bg-success{
     background-color: #507b33;
 }
 .text-center{ 
@@ -43,6 +43,40 @@ li {
 }
 .text-white {
     color: #fff;
+}
+.text-danger{
+    color: rgb(247, 100, 100);
+}
+.text-primary {
+    color: #217dbf;
+}
+.text-success {
+    color: #507b33;
+}
+.text-orange {
+    color: orange;
+}
+.full-screen {
+    width: 100%;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.flex-all{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.div-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /* UTITLITIS CLASSES ENDS */
 
@@ -57,7 +91,7 @@ li {
     --grey-300: #d2d2d2;
     --text-color: #D0D9DB;
 }
-.mycontainer{
+.contant-section{
     max-width: 70%;
     margin: auto;    
     background-color: rgb(143, 143, 143);
@@ -65,7 +99,6 @@ li {
 
 .container {
     width: 100%;
-    height: 100vh;
     background-color: var(--grey-300);
 }
 
@@ -110,7 +143,7 @@ li {
 }
 
 .form-group > input {
-    width: 30vw;
+    width: 26vw;
     padding: 1rem 1rem;
     font-size: 1.6rem;
     outline: none;
@@ -133,6 +166,8 @@ li {
 }
 .signupLink > a {
     font-size: 1.6rem;
+    color: #217dbf;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -171,4 +206,30 @@ header nav ul li a {
 .Registrations{
     display: flex;
     gap: 2rem;
+}
+.right-side {
+    width: 24vw;
+}
+.right-side section {
+    position: relative;
+    top: 40%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+.right-side section h3 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    /* margin-left: 6.5rem; */
+}
+.right-side section h3 span{
+    text-shadow: 0px 0px 4px rgba(0,0,0,.7);
+}
+.right-side section .slung {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-style: italic;
+    text-transform: capitalize;
+    color: #fff;
 }

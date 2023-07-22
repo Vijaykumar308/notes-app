@@ -13,7 +13,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <div>
+    <div class="full-screen bg-primary">
         @yield('content')
     </div>
 </body>

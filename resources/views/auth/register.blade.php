@@ -4,7 +4,7 @@
     
 
 @section('content')
-<div class="container box-center bg-image">
+<div class="container box-center bg-image full-screen">
     <div class="wrapper">
         <h3 class="form-title"> Create User </h3>
 
@@ -33,7 +33,7 @@
             </div>
         </form>
 
-        <p class="text-center signupLink"> Already have an account ? <a href="{{route('login')}}" class="link"> Login </a></p>
+        <p class="text-center signupLink"> Already have an account? <a href="{{route('login')}}" class="link"> Login </a></p>
     </div>
 </div>
 @endsection
