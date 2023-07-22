@@ -8,7 +8,7 @@
     <div class="row">
         <div class="left-side">
             <div class="wrapper">
-                <h3 class="form-title"> Create User </h3>
+                <h3 class="form-title"> Sign up </h3>
         
                 <form action="">
                     <div class="form-group">
@@ -31,7 +31,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <input type="submit" value="Register">
+                        <input type="submit" value="Signup">
                     </div>
                 </form>
         

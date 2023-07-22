@@ -215,7 +215,10 @@ header nav ul li a {
     gap: 2rem;
 }
 .right-side {
-    width: 24vw;
+    width: 26vw;
+    background: linear-gradient(to right, rgba(255,255,255,.3), rgba(0,0,0,.5)), url('../images/notes2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .right-side section {
     position: relative;
