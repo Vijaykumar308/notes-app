@@ -9,16 +9,20 @@
         <div class="left-side">
             <div class="wrapper">
                 <h3 class="form-title"> Sign up </h3>
-                @if($errors->any() )
-                    <p>{{$errors}}</p>
-                    <div class=""> failed </div>
+                @if($errors->any())
+                    <div class="result-info">
+                        @foreach ($errors->all() as $error)
+                            <p> {{$error}}</p>
+                        @endforeach
+                    </div>
                 @endif
+
                 <form method="POST">
                     @csrf
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="name"> Full Name </label>
                         <input type="text" id="name" name="name" value="vijay1" >
-                    </div>
+                    </div> --}}
 
                     <div class="form-group">
                         <label for="username"> Username </label>
@@ -36,7 +40,7 @@
         
                     <div class="form-group">
                         <label for="conformPassword"> conform Password </label>
-                        <input type="password" id="confromPassword" name="conformPassword" value="123">
+                        <input type="password" id="confromPassword" name="confirmPassword" value="123">
                     </div>
                     
                     <div class="form-group">

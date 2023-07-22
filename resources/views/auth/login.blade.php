@@ -9,6 +9,13 @@
             <div class="left-side">
                 <div class="wrapper">
                     <h3 class="form-title"> Login </h3>
+
+                    @error('error')
+                        <div class="result-info">
+                            <p>{{$message}}</p>
+                        </div>
+                    @enderror
+
                     <form method="POST">
                         @csrf
                         <div class="form-group">

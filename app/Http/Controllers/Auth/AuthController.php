@@ -2,45 +2,63 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Exception;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+
+use App\Models\User;
+use Illuminate\Contracts\Session\Session;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
     public function login(Request $request){
-        dd($request->all());
+
+        $request->validate([
+            'username' =>  'required',
+            'password' =>  'required'
+        ]);
+
+        if(Auth::attempt($request->only('username','password'))) {
+             return redirect('/')->with('username',$request->username);
+        }
+
+        return redirect('login')->withErrors(["error"  => 'Invalid Credentials']);
     }
 
     public function register(Request $request) {
-        // dd($request->all());
-        // validation
 
+        // validation
         $request->validate([
-            'username'  => 'required',
+            'username'  => 'required|unique:users',
             'email'     => 'required|unique:users|email',
-            'password'  => 'required|required_with:conformPassword|same:conformPassword',
-            'conformPassword'  => 'required'
+            'password'  => 'required|required_with:confirmPassword|same:confirmPassword',
+            'confirmPassword'  => 'required'
         ]);
 
         // save in database
        $user = new User();
-       $user->name      = $request->name;
-       $user->username  = $request->username;
-       $user->email     = $request->email;
+       $user->name      = '';
+       $user->username  = strtolower($request->username);
+       $user->email     = strtolower($request->email);
        $user->password  = Hash::make($request->password);
 
-       $res = $user->save();
+        try {
+            $res = $user->save();
+            if($res){
+                return redirect('login');
 
-        if($res){
-            return redirect('/');
+            }
+        }
+        catch(Exception $e){
+            echo $e->getMessage();
         }
     }
 
     public function logout(){
-
+        Auth::logout();
+        return redirect('login');
     }
 
 }

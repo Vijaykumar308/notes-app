@@ -82,6 +82,14 @@ li {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.result-info{
+    background: #fc8b88;
+    font-size: 17px;
+    padding: 11px;
+    margin-block: 1rem;
+    color: #fff;
+    border-radius: 5px;
+}
 /* UTITLITIS CLASSES ENDS */
 
 :root {
@@ -244,4 +252,5 @@ header nav ul li a {
     text-transform: capitalize;
     color: #fff;
 }
+
 

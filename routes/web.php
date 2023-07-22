@@ -15,19 +15,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['middleware' => 'guest'],function() {
 
-Route::get('/', function () {
-    return view('index');
-})->name('/');
+    Route::view('/login','auth.login')->name('login');
+    Route::view('/signup','auth.register')->name('singup');
+    
+    Route::post('/login', [AuthController::class,'login'])->name('login');
+    Route::post('/signup',[AuthController::class,'register'])->name('singup');
+    
+});
 
-Route::view('/login','auth.login')->name('login');
-Route::view('/signup','auth.register')->name('singup');
-
-Route::post('/login', [AuthController::class,'login'])->name('login');
-Route::post('/signup',[AuthController::class,'register'])->name('singup');
-
-
-Route::view('/feeds','feeds')->name('feeds');
+Route::group(['middleware' => 'auth'],function() {
+    Route::get('/', function () {
+        return view('index');
+    })->name('/');
+    
+    Route::view('/feeds','feeds')->name('feeds');
+    Route::get('/logout',[AuthController::class,'logout'])->name('logout');
+});
 
 
 
