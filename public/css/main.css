@@ -224,9 +224,10 @@ header nav ul li a {
 }
 .right-side {
     width: 26vw;
-    background: linear-gradient(to right, rgba(255,255,255,.3), rgba(0,0,0,.5)), url('../images/notes2.jpg');
+    background: linear-gradient(to bottom, rgba(255,255,255,.9), rgba(0,0,0,.5)), url(../images/notes2.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    filter: brightness(124%);
 }
 .right-side section {
     position: relative;
@@ -239,6 +240,7 @@ header nav ul li a {
 .right-side section h3 {
     font-size: 3rem;
     letter-spacing: 1px;
+    text-shadow: 0px 0px 2px black;
     /* margin-left: 6.5rem; */
 }
 .right-side section h3 span{
@@ -250,7 +252,8 @@ header nav ul li a {
     margin-top: 1rem;
     font-style: italic;
     text-transform: capitalize;
-    color: #fff;
+    color: #4679e1;
+    font-weight: bold;
 }
 
 
