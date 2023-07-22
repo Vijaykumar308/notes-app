@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Auth\AuthController;
 use Faker\Guesser\Name;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +19,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 })->name('/');
+
 Route::view('/login','auth.login')->name('login');
-Route::view('/register','auth.register')->name('singup');
+Route::view('/signup','auth.register')->name('singup');
+
+Route::post('/login', [AuthController::class,'login'])->name('login');
+Route::post('/signup',[AuthController::class,'register'])->name('singup');
+
 
 Route::view('/feeds','feeds')->name('feeds');
+
+
+

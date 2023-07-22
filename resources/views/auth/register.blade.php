@@ -9,25 +9,34 @@
         <div class="left-side">
             <div class="wrapper">
                 <h3 class="form-title"> Sign up </h3>
-        
-                <form action="">
+                @if($errors->any() )
+                    <p>{{$errors}}</p>
+                    <div class=""> failed </div>
+                @endif
+                <form method="POST">
+                    @csrf
+                    <div class="form-group">
+                        <label for="name"> Full Name </label>
+                        <input type="text" id="name" name="name" value="vijay1" >
+                    </div>
+
                     <div class="form-group">
                         <label for="username"> Username </label>
-                        <input type="text" id="username" name="username">
+                        <input type="text" id="username" name="username" value="vijay1" >
                     </div>
                     <div class="form-group">
                         <label for="email"> Email </label>
-                        <input type="email"  id="email" name="email">
+                        <input type="email"  id="email" name="email" value="jwvijay@gmail.com">
                     </div>
         
                     <div class="form-group">
                         <label for="password"> Password </label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" value="123">
                     </div>
         
                     <div class="form-group">
                         <label for="conformPassword"> conform Password </label>
-                        <input type="password" id="confromPassword" name="conformPassword">
+                        <input type="password" id="confromPassword" name="conformPassword" value="123">
                     </div>
                     
                     <div class="form-group">

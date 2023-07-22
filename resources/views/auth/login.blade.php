@@ -9,7 +9,8 @@
             <div class="left-side">
                 <div class="wrapper">
                     <h3 class="form-title"> Login </h3>
-                    <form action="">
+                    <form method="POST">
+                        @csrf
                         <div class="form-group">
                             <label for="username"> Username </label>
                             <input type="text" id="username" name="username" autocomplete="off" required>
