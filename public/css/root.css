@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+
+:root {
+    --red-400: #FF9B9B;
+    --orange-300: #FFD6A5;
+    --yellow-300: #FFFEC4;
+    --green-300: #CBFFA9;
+    
+    --white: #FFF;
+    --black: #000;
+    --grey-300: #d2d2d2;
+    --text-color: #D0D9DB;
+    --theam-primary: #ff5302bd; 
+
+    /* ========== Bootstrap Colors ============= */
+    --primary-clr: #3B71CA;
+    --success-clr: #14A44D;
+    --danger-clr: #DC4C64;
+    --warning-clr: #E4A11B;
+    --info-clr: #54B4D3;
+    --light-clr: #FBFBFB;
+    --dark-clr: #332D2D;
+    --secondary-clr: #9FA6B2;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

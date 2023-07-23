@@ -1,0 +1,80 @@
+@import url('root.css');
+
+.btn{
+    background-color: #507b33;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: .2rem;
+}
+
+.btn-danger,
+.bg-danger {
+    background-color: rgb(247, 100, 100);
+}
+.btn-primary,
+.bg-primary {
+    background-color: #217dbf;
+}
+.btn-white {
+    background-color: #fff;
+    color: #000;
+}
+.btn-success, 
+.bg-success {
+    background-color: #507b33;
+}
+.btn-orange,
+.bg-orange {
+    background-color: orange;
+}
+
+.btn-info,
+.bg-info{
+    background-color: var(--info-clr);
+}
+
+.bg-secondary{
+    background-color: var(--secondary-clr);
+}
+
+
+.text-center{ 
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-danger{
+    color: rgb(247, 100, 100);
+}
+
+.text-primary {
+    color: #217dbf;
+}
+
+.text-success {
+    color: #507b33;
+}
+
+.text-orange {
+    color: var(--theam-primary);
+}
+
+
+.container-80 {
+    width: 80%;
+    margin: auto;
+}
+
+.container-90 {
+    width: 90%;
+    margin: auto;
+}
+
+figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

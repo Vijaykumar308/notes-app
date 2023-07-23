@@ -25,10 +25,11 @@ Route::group(['middleware' => 'guest'],function() {
     
 });
 
+Route::get('/', function () {
+    return view('index');
+})->name('/');
+
 Route::group(['middleware' => 'auth'],function() {
-    Route::get('/', function () {
-        return view('index');
-    })->name('/');
     
     Route::view('/feeds','feeds')->name('feeds');
     Route::get('/logout',[AuthController::class,'logout'])->name('logout');

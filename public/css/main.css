@@ -1,87 +1,30 @@
+@import url('root.css');
+@import url('utilities.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
-}
-
-/* UTITLITIS CLASSES START */
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-.btn{
-    background-color: #507b33;
-    padding: 1rem 3rem;
-    color: #fff;
-    border-radius: .2rem;
-}
-.btn-danger,.bg-danger {
-    background-color: rgb(247, 100, 100);
-}
-.btn-primary, .bg-primary {
-    background-color: #217dbf;
-}
-.btn-success, .bg-success{
-    background-color: #507b33;
-}
-.btn-orange, .bg-orange {
-    background-color: orange;
-}
-.text-center{ 
-    text-align: center;
-}
-.text-white {
-    color: #fff;
-}
-.text-danger{
-    color: rgb(247, 100, 100);
-}
-.text-primary {
-    color: #217dbf;
-}
-.text-success {
-    color: #507b33;
-}
-.text-orange {
-    color: var(--theam-primary);
-}
 .full-screen {
     width: 100%;
     height: 100vh;
 }
+
 .flex{
     display: flex;
 }
-.flex-all{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.flex > * {
+    flex: 1;
 }
+
 .row {
     display: flex;
     justify-content: space-around;
 }
+
 .div-center{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .result-info{
     background: #fc8b88;
     font-size: 17px;
@@ -90,21 +33,7 @@ li {
     color: #fff;
     border-radius: 5px;
 }
-/* UTITLITIS CLASSES ENDS */
 
-:root {
-    --red-400: #FF9B9B;
-    --orange-300: #FFD6A5;
-    --yellow-300: #FFFEC4;
-    --green-300: #CBFFA9;
-    
-    --white: #FFF;
-    --black: #000;
-    --grey-300: #d2d2d2;
-    --text-color: #D0D9DB;
-
-    --theam-primary: #ff5302bd; 
-}
 .contant-section{
     max-width: 70%;
     margin: auto;    
@@ -120,6 +49,8 @@ li {
     display: grid;
     place-items: center;
 }
+
+
 .wrapper {
     background-color: var(--white);
     padding: 3rem;
@@ -135,7 +66,7 @@ li {
     background-color: var(--orange-300); */
 }
 
-/* AUTH DESIGN LOGIN AND REGISTRATION */
+/* ============ AUTH DESIGN LOGIN AND REGISTRATION ==============*/
 
 .form-title{
     font-size: 2rem;
@@ -166,6 +97,7 @@ li {
     letter-spacing: 1px;
     font-weight: normal;
 }
+
 .form-group > input[type='submit']{
     cursor: pointer;
     /* background-color: #507b33; */
@@ -175,10 +107,12 @@ li {
     font-size: 2rem;
     padding: 1.3rem 0;
 }
+
 .signupLink{
     margin-top: 3rem;
     font-size: 1.5rem;
 }
+
 .signupLink > a {
     font-size: 1.6rem;
     color: #217dbf;
@@ -186,20 +120,29 @@ li {
     text-decoration: none;
 }
 
-/* Header blade css */
+/* ========= HEADER BLADE CSS ============ */
+
 .active {
     border-bottom: 2px solid yellow;
     padding-bottom: .6rem;
 }
+
 header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 5rem;
-    background-color: #095185;
+    /* background-color: #095185; */
+    background-color: #217dbf;
     font-size: 1.7rem;
 }
+
+header .logo {
+    margin-left: 2.4rem;
+}
+
+
 header .logo a {
     font-size: 23px;
 }
@@ -208,6 +151,7 @@ header nav {
     margin-left: auto;
     margin-right: 3rem;
 }
+
 header nav ul{
     display: flex;
     gap: 4rem;
@@ -218,10 +162,13 @@ header nav ul li a {
     letter-spacing: 1px;
 }
 
+/*  ========= REGISTRATION BLADE CSS =========== */
+
 .Registrations{
     display: flex;
     gap: 2rem;
 }
+
 .right-side {
     width: 26vw;
     background: linear-gradient(to bottom, rgba(255,255,255,.9), rgba(0,0,0,.5)), url(../images/notes2.jpg);
@@ -229,6 +176,7 @@ header nav ul li a {
     background-repeat: no-repeat;
     filter: brightness(124%);
 }
+
 .right-side section {
     position: relative;
     top: 40%;
@@ -243,9 +191,11 @@ header nav ul li a {
     text-shadow: 0px 0px 2px black;
     /* margin-left: 6.5rem; */
 }
+
 .right-side section h3 span{
     text-shadow: 0px 0px 4px rgba(0,0,0,.7);
 }
+
 .right-side section .slung {
     font-size: 1.6rem;
     margin-left: 2rem;
@@ -256,7 +206,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* =============== */
+/* ================ USER ACCOUNT DROPDOWN ============== */
 .userAccountLabel{
     position: absolute;
     opacity: 0;
@@ -265,11 +215,13 @@ header nav ul li a {
     opacity: 0;
     position: absolute;
 }
+
 #userAccount{
     color: #fff;
     font-size: 21px;
     cursor: pointer;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -283,6 +235,7 @@ header nav ul li a {
     border-radius: .4rem;
     text-transform: capitalize;
 }
+
 .dropdown-content li{
     padding: 1rem 1rem;
     color: black;
@@ -291,7 +244,86 @@ header nav ul li a {
 .dropdown-content li:hover {
     background-color: #ddd;
 }
+
 .showSubMenus {
     display: block;
 }
+
 .dropdown:hover .dropdown-content {display: block;}
+
+/* ============= HOME/INDEX PAGE DESIGN ================= */
+
+.flex_override {
+    gap: 3rem;
+}
+
+.hero-section{
+    background-color: var(--light-clr);
+    padding: 8rem 0;
+}
+
+.hero-content > h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.hero-content > h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.hero-content > p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    letter-spacing: 1px;
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image figure{
+    width: 35vw;
+    height: 35vh;
+}
+.features-section {
+    padding: 3rem;
+    background-color: #20b684;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.features-section .heading-features {
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-family: cursive;
+}
+
+.flex-item h4 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-family: math;
+}
+.flex-item p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-family: system-ui;
+}
+
+footer {
+    width: 100%;
+    background-color: #217dbf;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1.8rem 0;
+    letter-spacing: 1px;
+}

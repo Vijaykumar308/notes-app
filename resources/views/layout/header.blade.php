@@ -26,7 +26,7 @@
         </div>
             
         @else
-        <a href="{{route('login')}}" class="btn btn-primary">Login</a>
+        <a href="{{route('login')}}" class="btn btn-white">Login</a>
         <a href="{{route('singup')}}" class="btn btn-danger">Register</a>
     </div>
     @endauth

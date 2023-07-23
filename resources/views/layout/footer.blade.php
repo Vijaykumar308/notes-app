@@ -1,1 +1,1 @@
-this is footer
+<p> Copywright &copy 2023-2024 @ Notepro.in - All Rights Reserved </p>
