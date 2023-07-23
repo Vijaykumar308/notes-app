@@ -136,6 +136,8 @@ header {
     /* background-color: #095185; */
     background-color: #217dbf;
     font-size: 1.7rem;
+    position: sticky;
+    top: 0;
 }
 
 header .logo {

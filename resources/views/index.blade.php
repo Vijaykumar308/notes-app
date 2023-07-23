@@ -32,7 +32,7 @@
             </div>
 
             <div class="flex-item">
-                <h4>Share Notes</h4>
+                <h4>Share thoughts</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit aliquam corporis perferendis consectetur, distinctio ab inventore reprehenderit quia quae placeat, eligendi eum officiis.</p>
             </div>
        </div>
