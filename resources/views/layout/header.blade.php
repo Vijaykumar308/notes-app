@@ -14,6 +14,8 @@
     <div class="Registrations">
         @auth
         <div class="dropdown">
+            <input type="checkbox" id="userAccount" class="userAccountCheckbox"/>
+            <label for="userAccount" class="userAccountLabel">test</label>
             <i class="fa-solid fa-circle-user" id="userAccount"></i>
             <ul class="user_profile dropdown-content" id="userProfile">
                 <li>Hi, {{Auth::user()->username}}</li>
@@ -29,3 +31,19 @@
     </div>
     @endauth
 </header>
+
+<script>
+    let userAccountCheckbox = document.getElementById('userAccount');
+    let userProfileParent = document.getElementById('userProfile');
+
+    userAccountCheckbox.addEventListener('focus',()=>{
+        userProfileParent.classList.add("showSubMenus");
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!event.target.matches("#userAccount")) {
+            userProfileParent.classList.remove("showSubMenus");
+        }
+    });
+
+</script>

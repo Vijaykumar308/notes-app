@@ -257,7 +257,19 @@ header nav ul li a {
 }
 
 /* =============== */
-
+.userAccountLabel{
+    position: absolute;
+    opacity: 0;
+}
+.userAccountCheckbox{
+    opacity: 0;
+    position: absolute;
+}
+#userAccount{
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -265,7 +277,7 @@ header nav ul li a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     width: 150px;
-    top: 3.8rem;
+    top: 4rem;
     right: 2rem;
     font-size: 1.2rem;
     border-radius: .4rem;
@@ -275,7 +287,11 @@ header nav ul li a {
     padding: 1rem 1rem;
     color: black;
 }
+
 .dropdown-content li:hover {
     background-color: #ddd;
+}
+.showSubMenus {
+    display: block;
 }
 .dropdown:hover .dropdown-content {display: block;}
