@@ -337,7 +337,6 @@ header nav ul li a {
 
 /* each items in grid start */
 .layout-section > .item-1 {
-    /* background-color: #20b684; */
     background-color: #fff;
     border-radius: .5rem;
 }
@@ -378,9 +377,10 @@ header nav ul li a {
 }
 
 .feed-menu .heading-menu {
-    padding: 2rem;
-    font-size: 2rem;
-    color: grey;
+    padding: 1.5rem;
+    font-size: 19px;
+    color: white;
+    background: #f36a6a;
 } 
 
 .feed-menu ul li + li{
@@ -400,10 +400,12 @@ header nav ul li a {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .feed-menu ul li:hover {
-    background-color: rgb(127, 126, 124);
+    /* background-color: rgb(127, 126, 124); */
+    background-color: rgb(33 114 160);
 }
 
 .feed-menu ul li:hover > a{
@@ -416,20 +418,21 @@ header nav ul li a {
 
 .feed-menu ul li a {
     font-size: 1.4rem;
-    color: var(--grey-300);
+    color: #fe7c3d;
     text-transform: capitalize;
     font-weight: 600;
 }
 
 .feed-menu ul li i{
     font-size: 1.5rem;
-    color: grey;
+    color: #1a1715; 
 }
 
 
 /* Active Menu  */
 .feed-menu-active, .feed-menu-active a{
-    background-color: rgb(127, 126, 124); 
+    /* background-color: rgb(127, 126, 124);  */
+    background-color: rgb(33 114 160);
     display: inline-block;
     width: 100%;
     color: #fff !important;

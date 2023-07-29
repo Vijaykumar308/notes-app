@@ -34,7 +34,7 @@
         </ul>
     </div>
     <div class="item-2">
-        @for ($i = 1; $i < 5; $i++)
+        @for ($i = 1; $i < 50; $i++)
             <div class="posts-container">
                 <div class="posts-topbar">
                     <div class="profile">
@@ -47,7 +47,7 @@
                                 <h1 class="messages-block username">                           
                                     mr.vijay.kumar
                                 </h1>
-                                <p class="">23 hours ago</p>
+                                <p class="">6 hours ago</p>
                             </a>
                         </div>
                     </div>
