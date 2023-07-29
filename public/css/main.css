@@ -327,6 +327,191 @@ header nav ul li a {
     line-height: 2.6rem;
     font-family: system-ui;
 }
+/* ================== Feed Page Design ================= */
+.layout-section {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* each items in grid start */
+.layout-section > .item-1 {
+    /* background-color: #20b684; */
+    background-color: #fff;
+    border-radius: .5rem;
+}
+
+.layout-section > .item-2 {
+    background-color: orange;
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+.layout-section > .item-3 {
+    background-color: #CBFFA9;
+    grid-row: 1/3;
+    grid-column: 4/4;
+
+}
+
+.layout-section > .item-4 {
+    /* background-color: #fc8b88; */
+}
+
+.layout-section > .item-5 {
+    background-color: #000;
+    color: #fff;
+    grid-column: 4/4;
+}
+/* each items in grid ends */
+
+/* 1st Grid Cells Starts */
+.feed-menu {
+    box-shadow: 0px 0px 3px -1px grey;
+    text-transform: uppercase;
+    max-height: 297px;
+    position: sticky;
+    top: 74px;
+}
+
+.feed-menu .heading-menu {
+    padding: 2rem;
+    font-size: 2rem;
+    color: grey;
+} 
+
+.feed-menu ul li + li{
+    /* background-color: orange; */
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feed-menu ul li:first-child{
+    padding: 1rem 0;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feed-menu ul li:hover {
+    background-color: rgb(127, 126, 124);
+}
+
+.feed-menu ul li:hover > a{
+    color: #fff;
+} 
+
+.feed-menu ul li:hover > i{
+    color: #fff;
+}
+
+.feed-menu ul li a {
+    font-size: 1.4rem;
+    color: var(--grey-300);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.feed-menu ul li i{
+    font-size: 1.5rem;
+    color: grey;
+}
+
+
+/* Active Menu  */
+.feed-menu-active, .feed-menu-active a{
+    background-color: rgb(127, 126, 124); 
+    display: inline-block;
+    width: 100%;
+    color: #fff !important;
+}
+
+.feed-menu-active i {
+    color: #fff !important;
+}
+
+/* 1st Grid Cells Ends */
+
+/* 4ths Grid Cells Starts */
+.event-menu .heading-menu {
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #20b684;
+    padding-left: 1.6rem;
+}
+
+.events-ul {
+    max-height: 15rem;
+    overflow-y: scroll;
+}
+
+.events-ul li {
+    padding: 1rem 0;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-block {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.user-block .profile-pic {
+    width: 4rem;
+    height: 4rem;
+}
+.user-block .profile-pic img {
+    border-radius: 100%;
+}
+
+.profile-block .username{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.profile-block .wish-title {
+    font-size: 1.6rem;
+    /* text-align: center; */
+    color: #217dbf;
+    margin-bottom: 1.6rem;
+    margin-top: 1.2rem;
+
+}
+/* 4ths Grid Cells Ends */
+
+/* 3rd Grid Cells starts */
+.messages-menu .heading-menu {
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #20b684;
+    padding-left: 1.6rem;
+}
+.messages-ul {
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+.messages-block.username{
+    margin-bottom: .7rem;
+    font-size: 1.7rem;
+}
+.messages.user-block{
+    padding: 1.3rem;
+}
+
+/* 3rd Grid Cells ends */
+
+
+/* ================== Footer Design ================== */
 
 footer {
     width: 100%;
