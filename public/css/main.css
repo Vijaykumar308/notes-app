@@ -572,6 +572,18 @@ header nav ul li a {
     font-size: 1.5rem;
     letter-spacing: 1px;
     line-height: 2.4rem;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: none;
+}
+.posts-content .show-more-link {
+    font-size: 1.4rem;
+    /* background-color: red; */
+    margin: .5rem 0;
+    display: inline-block;
 }
 .posts-footer{
     display: flex;
