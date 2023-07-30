@@ -29,9 +29,9 @@ Route::get('/', function () {
     return view('index');
 })->name('/');
 
-Route::group(['middleware' => 'auth'],function() {
+Route::group(['middleware' => 'auth'],function() {    
     Route::view('/feeds','feeds')->name('feeds');
-    Route::view('/post/{username?}/{postId?}','post.singlePost')->name('singlePost');
+    Route::view('/feeds/{username?}/{postId?}','post.singlePost')->name('singlePost');
     Route::get('/logout',[AuthController::class,'logout'])->name('logout');
 });
 

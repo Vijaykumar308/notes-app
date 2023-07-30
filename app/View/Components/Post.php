@@ -27,12 +27,12 @@ class Post extends Component
         $this->postId   = $postId;
         $this->username = $username;
         $this->hoursAgo = $hoursAgo;
-        $this->$content = $content;
-        $this->$like    = $like;
+        $this->content  = $content;
+        $this->like     = $like;
         $this->dislikes = $dislikes;
         $this->comments = $comments;
         $this->share    = $share;
-        $this->views = $views;
+        $this->views    = $views;
         $this->showMore = $showMore;
     }
 

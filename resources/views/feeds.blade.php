@@ -16,7 +16,7 @@
                 postId={{rand(354232,65667687233212)}}
                 username={{$usernames[rand(0,4)]}}
                 hoursAgo={{rand(1,23)}}
-                content={{$usernames[rand(0,4)]}}
+                content="Because you are alive, everything is possible. - Thich Nhat Hanh"
                 like={{rand(1,10)}}
                 dislikes={{rand(1,10)}}
                 comments={{rand(1,7)}}

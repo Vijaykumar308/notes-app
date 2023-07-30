@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title','feeds')
+@section('title','Feeds')
 @php
     $usernames = ['mr.vijay.kumar308', 'ruhisingh2696', 'manish_kumar','lovejotsaini','aditi'];
 @endphp
@@ -14,14 +14,34 @@
         postId={{rand(354232,65667687233212)}}
         username={{$usernames[rand(0,4)]}}
         hoursAgo={{rand(1,23)}}
-        content='dfds'
-        like="34"
+        content="Because you are alive, everything is possible. - Thich Nhat Hanh
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium magni vel eligendi a possimus! Nesciunt quae, cum impedit, accusantium libero maxime odit doloremque, cupiditate architecto error possimus iusto laboriosam at deserunt nisi? Laboriosam sunt, culpa dolores exercitationem quibusdam earum, totam soluta eaque numquam, modi reprehenderit odio! Cumque possimus autem incidunt beatae fuga amet eveniet rerum itaque aspernatur perspiciatis, obcaecati ipsum blanditiis labore hic repellendus quo harum reiciendis, ullam dignissimos numquam repudiandae tenetur? Quaerat ad voluptatem voluptatum tempora cumque error eum iusto nulla numquam"
+        like={{rand(1,10)}}
         dislikes={{rand(1,10)}}
         comments={{rand(1,7)}}
         share={{rand(1,4)}}
         views={{rand(10,30)}}
         showMore={{false}}
         />   
+        <div class="comment-box">
+            <h2>Comments</h2>
+            @for ($i = 1; $i < 2; $i++)
+                <div class="comment-block">
+                    <div>
+                        <figure class="profile-pics">
+                            <img src="{{asset('images/example/profile-pic.jpg')}}" alt="profile-pic">
+                        </figure>
+                    </div>
+
+                    <div class="comment">
+                        <a href="/user/profile/mr.vijay.kumar308">
+                            <span class="username"> mr.vijay.kumar308 </span>
+                        </a>
+                       Nice Post !
+                    </div> 
+                </div>
+                @endfor
+            </div>
     </div>
 
     <div class="item-3">

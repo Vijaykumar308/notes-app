@@ -28,9 +28,6 @@
         {{-- <h3 class="post-heading"> My first Blog</h3> --}}
         <p class="post-message"> 
             {{$content}}
-            <br>
-            Because you are alive, everything is possible. - Thich Nhat Hanh
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium magni vel eligendi a possimus! Nesciunt quae, cum impedit, accusantium libero maxime odit doloremque, cupiditate architecto error possimus iusto laboriosam at deserunt nisi? Laboriosam sunt, culpa dolores exercitationem quibusdam earum, totam soluta eaque numquam, modi reprehenderit odio! Cumque possimus autem incidunt beatae fuga amet eveniet rerum itaque aspernatur perspiciatis, obcaecati ipsum blanditiis labore hic repellendus quo harum reiciendis, ullam dignissimos numquam repudiandae tenetur? Quaerat ad voluptatem voluptatum tempora cumque error eum iusto nulla numquam
         </p>
 
         @if ($showMore)
@@ -51,12 +48,12 @@
                 {{-- <i class="fa-solid fa-heart-crack"></i> --}}
                 <span class="reaction-counts">{{$dislikes}}k</span>
             </button>
-
-            <button class="remove-btn-default-style">
-                {{-- <i class="fa-solid fa-share-nodes reaction-counts"></i> --}}
-                <i class="fa-regular fa-comment reaction-counts"></i>
-                <span class="reaction-counts"> {{$comments}}k </span>
-            </button>
+            <a href="{{route('singlePost')}}/{{$username}}/{{$postId}}">
+                <button class="remove-btn-default-style">
+                    <i class="fa-regular fa-comment reaction-counts"></i>
+                    <span class="reaction-counts"> {{$comments}}k </span>
+                </button>
+            </a>
 
             <button class="remove-btn-default-style">
                 <i class="fa-solid fa-share-nodes reaction-counts"></i>
