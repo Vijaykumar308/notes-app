@@ -3,7 +3,6 @@
 @php
     $usernames = ['mr.vijay.kumar308', 'ruhisingh2696', 'manish_kumar','lovejotsaini','aditi'];
 @endphp
-
 @section('main')
 <section class="layout-section container-90">
     <div class="feed-menu item-1">
@@ -11,20 +10,18 @@
     </div>
 
     <div class="item-2">
-        @for ($i = 1; $i < 15; $i++)
-           <x-post 
-                postId={{rand(354232,65667687233212)}}
-                username={{$usernames[rand(0,4)]}}
-                hoursAgo={{rand(1,23)}}
-                content={{$usernames[rand(0,4)]}}
-                like={{rand(1,10)}}
-                dislikes={{rand(1,10)}}
-                comments={{rand(1,7)}}
-                share={{rand(1,4)}}
-                views={{rand(10,30)}}
-                showMore={{true}}
-            />  
-        @endfor
+        <x-post 
+        postId={{rand(354232,65667687233212)}}
+        username={{$usernames[rand(0,4)]}}
+        hoursAgo={{rand(1,23)}}
+        content='dfds'
+        like="34"
+        dislikes={{rand(1,10)}}
+        comments={{rand(1,7)}}
+        share={{rand(1,4)}}
+        views={{rand(10,30)}}
+        showMore={{false}}
+        />   
     </div>
 
     <div class="item-3">

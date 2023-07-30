@@ -31,6 +31,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'auth'],function() {
     Route::view('/feeds','feeds')->name('feeds');
+    Route::view('/post/{username?}/{postId?}','post.singlePost')->name('singlePost');
     Route::get('/logout',[AuthController::class,'logout'])->name('logout');
 });
 
