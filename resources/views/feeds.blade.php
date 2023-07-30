@@ -1,7 +1,8 @@
 @extends('layout.app')
-
 @section('title','feeds')
-
+@php
+    $usernames = ['mr.vijay.kumar308', 'ruhisingh2696', 'manish_kumar','lovejotsaini','aditi'];
+@endphp
 @section('main')
 <section class="layout-section container-90">
     <div class="feed-menu item-1">
@@ -43,25 +44,27 @@
                         </figure>
 
                         <div class="profile-block">
-                            <a href="users/messages/mr.vijay.kumar">
+                            <a href="users/messages/{{$usernames[rand(0, 4)]}}">
                                 <h1 class="messages-block username">                           
-                                    mr.vijay.kumar
+                                    {{-- mr.vijay.kumar308 --}}
+                                    {{ $usernames[rand(0, 4)]}}
                                 </h1>
-                                <p class="">6 hours ago</p>
                             </a>
+                            <p class="">{{ rand(1,23) }} hours ago</p>
                         </div>
                     </div>
                     <div class="topbar-right-side">
-                        <button class="save-btn-icon reaction-counts remove-btn-default-style">
+                        <button class="follow-button"> + Follow </button>
+                        {{-- <button class="save-btn-icon reaction-counts remove-btn-default-style">
                             <i class="fa-regular fa-bookmark"></i>
-                            {{-- <i class="fa-solid fa-bookmark"></i> --}}
-                        </button>
+                            <i class="fa-solid fa-bookmark"></i>
+                        </button> --}}
                     </div>
                 </div>
 
                 <div class="posts-content">
-                    <h3 class="post-heading"> My first Blog</h3>
-                    <p class="post-message"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et exercitationem quas aliquid illo rerum, in consectetur ratione quaerat quo placeat cumque hic fugit unde temporibus praesentium porro quae aliquam aspernatur? Pariatur, libero quis. Ut iste itaque rem quis ab laudantium rerum deserunt at animi nostrum numquam veritatis mollitia incidunt, a facilis ad voluptates debitis aspernatur optio autem soluta est maxime modi repellendus? Suscipit eos officiis quos ratione, quisquam commodi esse mollitia veritatis harum atque fugit iste non corrupti qui, voluptatum reprehenderit nemo. Veritatis vero, earum debitis voluptas enim illo nam animi est quia quaerat cumque consequuntur ullam natus dignis. </p>
+                    {{-- <h3 class="post-heading"> My first Blog</h3> --}}
+                    <p class="post-message"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et exercitationem quas aliquid illo rerum, in consectetur ratione quaerat quo placeat cumque hic fugit unde temporibus praesentium porro quae aliquam aspernatur? Pariatur, libero quis. Ut iste itaque rem quis ab laudantium rerum deserunt at animi nostrum numquam veritatis mollitia  </p>
                 </div>
 
                 <div class="posts-footer">
@@ -69,21 +72,30 @@
                         <button class="remove-btn-default-style">
                             <i class="fa-regular fa-heart reaction-counts"></i>
                             {{-- <i class="fa-solid fa-heart"></i> --}}
-                            <span class="reaction-counts">10k</span>
+                            <span class="reaction-counts"> {{rand(1,10)}}k </span>
                         </button>
+
                         <button class="remove-btn-default-style">
                             <i class="fa-regular fa-thumbs-down reaction-counts"></i>
                             {{-- <i class="fa-solid fa-heart-crack"></i> --}}
-                            <span class="reaction-counts">4k</span>
+                            <span class="reaction-counts">{{rand(1,10)}}k</span>
                         </button>
+
+                        <button class="remove-btn-default-style">
+                            {{-- <i class="fa-solid fa-share-nodes reaction-counts"></i> --}}
+                            <i class="fa-regular fa-comment reaction-counts"></i>
+                            <span class="reaction-counts"> {{rand(1,10)}}k </span>
+                        </button>
+
                         <button class="remove-btn-default-style">
                             <i class="fa-solid fa-share-nodes reaction-counts"></i>
-                            <span class="reaction-counts"> 3k </span>
+                            <span class="reaction-counts">{{rand(1,10)}}k </span>
                         </button>
                     </div>
+
                     <button class="remove-btn-default-style">
                         <i class="fa-solid fa-eye"></i>
-                        <span class="reaction-counts"> 20k</span>
+                        <span class="reaction-counts"> {{rand(30,40)}}k </span>
                     </button>
                 </div>
             </div>  

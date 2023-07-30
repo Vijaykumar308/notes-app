@@ -547,6 +547,19 @@ header nav ul li a {
     border-radius: 50%;
 }
 
+.topbar-right-side .follow-button {
+    padding: .7rem 1.2rem;
+    font-size: 1.4rem;
+    background-color: #fe7c3d;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.topbar-right-side .follow-button:hover {
+    background-color: #ef7233;
+}
+
 .posts-content{
     margin: 2rem 0;
 }
@@ -564,9 +577,10 @@ header nav ul li a {
     display: flex;
     justify-content: space-between;
 }
-.posts-footer-items button{
-    background:none;
-    border: none;
+
+.posts-footer-items{
+    display: flex;
+    gap: 2.2rem;
 }
 
 .remove-btn-default-style {
@@ -574,15 +588,14 @@ header nav ul li a {
     border: none;
 }
 
-
 .reaction-counts {
     font-size: 1.6rem;
     cursor: pointer;
 }
 
-.posts-footer-items > button:nth-child(2) {
+/* .posts-footer-items > button:nth-child(2) {
     margin: 0 2rem;
-}
+} */
 
 
 /* 2nd Grid Cells ends */
