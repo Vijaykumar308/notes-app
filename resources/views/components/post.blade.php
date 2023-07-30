@@ -26,7 +26,7 @@
 
     <div class="posts-content">
         {{-- <h3 class="post-heading"> My first Blog</h3> --}}
-        <p class="post-message"> 
+        <p class="post-message {{  $showMore ? "text-ellipse" : "" }}"> 
             {{$content}}
         </p>
 

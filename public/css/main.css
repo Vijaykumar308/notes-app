@@ -572,13 +572,16 @@ header nav ul li a {
     font-size: 1.5rem;
     letter-spacing: 1px;
     line-height: 2.4rem;
-    
+}
+
+.text-ellipse{
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: none;
 }
+
 .posts-content .show-more-link {
     font-size: 1.4rem;
     /* background-color: red; */
@@ -613,6 +616,7 @@ header nav ul li a {
 
 
 /* ========== Single Post ============ */
+
 .comment-block {
     background-color: rgb(242, 239, 239);
     padding: 1rem;
@@ -621,6 +625,27 @@ header nav ul li a {
     margin-top: 1rem;
     border-radius: .5rem;
 }
+
+.form-box {
+    background-color: rgb(228, 223, 223);
+    padding: 1rem 2rem;
+}
+
+.form-box input[type='text'] {
+    width: 90%;
+    padding: .7rem 1rem;
+    font-size: 1.6rem;
+}
+
+.sent-btn {
+    background: #20b684;
+    width: 46px;
+    height: 36px;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #e2dddd;
+}
+
 .comment-block figure {
     width: 40px;
     height: 40px;

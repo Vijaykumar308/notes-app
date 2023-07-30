@@ -25,6 +25,16 @@
         />   
         <div class="comment-box">
             <h2>Comments</h2>
+            <form action="">
+                @csrf
+                <div class="form-box">
+                    <input type="text" name="comment" placeholder="comment">
+                    <button type="submit" class="remove-btn-default-style sent-btn">
+                        <i class="fa-regular fa-paper-plane sent-icon"></i>
+                    </button>
+                </div>
+            </form>
+
             @for ($i = 1; $i < 2; $i++)
                 <div class="comment-block">
                     <div>
